@@ -2,8 +2,7 @@
 title: "Hello World"
 date: 2020-02-08T15:50:01+07:00
 description: Text tentang postingan ini
-image:
-- /img/post-cover.png
+image: 
 series: []
 tags: []
 audio: []

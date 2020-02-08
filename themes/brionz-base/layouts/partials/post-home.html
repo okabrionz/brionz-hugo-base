@@ -1,3 +1,5 @@
+<div class="col-md-8">
 {{ range first 12 (where .Site.Pages "Type" "post") }}
 {{ .Render "summary"}}
 {{ end }}
+</div>

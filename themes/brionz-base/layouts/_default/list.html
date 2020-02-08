@@ -1,19 +1,17 @@
 {{ define "main" }}
-    <main>
-        <article>
-            <header>
-                <div class="jumbotron bg-primary text-white text-center">
-                <h1 class="display-3">{{.Title}}</h1>
-            </div>
-        </header>
-        {{.Content}}
-    </article>
-        <ul>
-            {{ range .Pages }}
-            <li class="clearfix">
-                <a href="{{.Permalink}}"><h4>{{.Date.Format "2006-01-02"}} | {{.Title}}</h4></a>
-            </li>
-            {{ end }}
-        </ul>
-    </main>
+<header>
+    <div class="jumbotron bg-primary text-white text-center">
+        <h1 class="display-3">{{.Title}}</h1>
+    </div>
+</header>
+{{.Content}}
+<ul class="list-unstyled">
+    {{ range .Pages }}
+    <li>
+        <a href="{{.Permalink}}">
+            <h4>{{.Date.Format "2006-01-02"}} | {{.Title}}</h4>
+        </a>
+    </li>
+    {{ end }}
+</ul>
 {{ end }}
