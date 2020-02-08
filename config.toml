@@ -1,3 +1,22 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.okabrionz.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Hugo Base Theme by bRionZ"
+theme = "brionz-base"
+sectionPagesMenu = "main"
+
+[params]
+  description = "This is homepage of bRionZ Base Hugo boilerplate theme."
+  images = ["site-feature-image.jpg"]
+  title = "Front Page"
+
+[taxonomies]
+  blog = "post"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "This is the blog section"
+    title = "blog section"
+    url = "/blog/"
+    weight = -110
