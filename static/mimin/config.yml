@@ -17,3 +17,17 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    folder: 'content'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: 'type', name: 'type', widget: 'type', default: page }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
