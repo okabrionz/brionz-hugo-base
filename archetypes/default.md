@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 description: Text tentang postingan ini
-images:
+image:
 - post-cover.png
 series: []
 tags: []
