@@ -1,5 +1,8 @@
 ---
-title: Share and Learn in One Place.
+title: Blog
 description: Type Your Description here.
 image: /img/bronz.png
 ---
+
+### Hell Yeah! You Got it.
+Read, share in one place.

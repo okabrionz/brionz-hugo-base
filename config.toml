@@ -1,22 +1,14 @@
 baseURL = "https://www.okabrionz.com/"
 languageCode = "en-us"
-title = "Hugo Base Theme by bRionZ"
+title = "Hugo Base"
 theme = "brionz-base"
 sectionPagesMenu = "main"
+googleAnalytics = "UA-123-452-1"
+summaryLength = "25"
 
 [params]
   description = "This is homepage of bRionZ Base Hugo boilerplate theme."
   images = ["site-feature-image.jpg"]
   title = "Front Page"
 
-[taxonomies]
-  blog = "post"
-
 [menu]
-
-  [[menu.main]]
-    identifier = "blog"
-    name = "This is the blog section"
-    title = "blog section"
-    url = "/blog/"
-    weight = -110

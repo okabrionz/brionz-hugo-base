@@ -1,0 +1,30 @@
+{{ define "main" }}
+<main>
+    <article>
+        <header>
+            <div class="jumbotron bg-primary text-white text-center">
+                <h1 class="display-3">{{ .Title }}</h1>
+            </div>
+        </header>
+        {{ .Content }}
+        <ul class="contents list-unstyled">
+            {{ range .Paginator.Pages }}
+            <li>
+                <a href="{{ .RelPermalink }}">
+                    <h3>{{.Title}}</h3>
+                </a>
+                <div>
+                    {{ .Summary }}
+                </div>
+                {{ if .Truncated }}
+                <div>
+                    <a href="{{ .RelPermalink }}">Read More…</a>
+                </div>
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+        {{ template "_internal/pagination.html" . }}
+    </article>
+</main>
+{{ end }}
