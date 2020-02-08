@@ -3,8 +3,12 @@
 <div class="jumbotron bg-primary text-white text-center">
     <h1 class="display-3">{{.Title}}</h1>
 </div>
-{{.Content}}
+<div class="text-center">
+    {{.Content}}
+</div>
 
+{{partial "features" .}}
 {{partial "post-home" .}}
+
 
 {{end}}

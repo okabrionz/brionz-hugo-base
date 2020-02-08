@@ -8,7 +8,7 @@ series: []
 tags: []
 audio: []
 videos: []
-draft: false
+type: post
 ---
 
 Anim nostrud mollit eiusmod officia. Est sunt magna nulla labore. Amet commodo est ea minim enim culpa et dolore sunt consectetur labore.

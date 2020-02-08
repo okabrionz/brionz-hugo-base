@@ -6,7 +6,10 @@
                 <h1 class="display-3">{{ .Title }}</h1>
             </div>
         </header>
-        {{ .Content }}
+        <div class="text-center">
+            {{.Content}}
+        </div>
+        
         <ul class="contents list-unstyled">
             {{ range .Paginator.Pages }}
             <li>

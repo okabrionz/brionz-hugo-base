@@ -1,4 +1,4 @@
-baseURL = "https://www.okabrionz.com/"
+baseURL = "https://hugo-base-theme.netlify.com/"
 languageCode = "en-us"
 title = "Hugo Base"
 theme = "brionz-base"
@@ -11,4 +11,3 @@ summaryLength = "25"
   images = ["site-feature-image.jpg"]
   title = "Front Page"
 
-[menu]
