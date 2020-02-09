@@ -1,4 +1,4 @@
-baseURL = "https://hugo-base-theme.netlify.com/"
+baseURL = "https://base.okabrionz.com/"
 languageCode = "en-us"
 title = "Hugo Base"
 theme = "brionz-base"
