@@ -1,5 +1,5 @@
 ---
-title: "Hugo Base Theme"
+title: "Front Page"
 date: 2020-02-08T15:19:16+07:00
 description: This is homepage of bRionZ Base Hugo boilerplate theme.
 ---

@@ -1,16 +1,21 @@
 {{define "main"}}
 <div class="row">
     <div class="col-md-8">
-        <img class="img-fluid" alt="{{.Title}}" src="{{if eq .Params.image nil}}https://d33wubrfki0l68.cloudfront.net/82442f960da43719eb18b7697097cb84c808948a/f3365/img/fast_loading.svg{{else}}{{.Params.image}}{{end}}" />
-        <h1>{{.Title}}</h1>
-
+        {{if .Params.image }}<img class="img-fluid" alt="{{.Title}}" src="{{.Params.image}}" />{{end}}
         {{.Content}}
+        <div class="post-meta small">Published at {{ .Date.Format "Mon, Jan 2, 2006" }} by: <a
+                href="https://www.okabrionz.com/">Oka bRionZ</a></div>
     </div>
 
     <div class="col-md-4 my-3">
         <div class="sticky-top">
             <h5>Contact us</h5>
             <p><a href="https://wa.me/6282319228666" target="_blank" rel="noopener noreferrer">Whatsapp</a></p>
+            <div>
+                {{with .Site.RegularPages.Prev . }}<a class="btn btn-sm btn-primary mr-3"
+                href="{{.RelPermalink}}">Prev</a>{{end}}{{with .Site.RegularPages.Next . }}
+                <a class="btn btn-sm btn-primary" href="{{.RelPermalink}}">Next</a>{{end}}
+            </div>
         </div>
     </div>
 </div>

@@ -7,7 +7,7 @@ googleAnalytics = "UA-123-452-1"
 summaryLength = "25"
 
 [params]
-  description = "This is homepage of bRionZ Base Hugo boilerplate theme."
-  images = ["site-feature-image.jpg"]
   title = "Front Page"
+  description = "This is homepage of bRionZ Base Hugo boilerplate theme."
+  image = ["site-feature-image.jpg"]
 
